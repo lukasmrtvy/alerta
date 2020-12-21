@@ -1,0 +1,21 @@
+name: check&release
+
+on:
+  schedule:
+  - cron:  "0 1 * * *"
+  workflow_dispatch:
+
+jobs:
+  repo-sync:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        repository: 'alerta/docker-alerta'
+
+    - name: Publish Helm chart
+      uses: stefanprodan/helm-gh-pages@master
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        charts_dir: contrib/kubernetes/helm/
+        linting: off
