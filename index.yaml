@@ -3,16 +3,16 @@ entries:
   alerta:
   - apiVersion: v1
     appVersion: 8.1.0
-    created: "2021-01-17T02:45:11.015534457Z"
+    created: "2021-01-18T02:43:31.083793232Z"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
       repository: https://charts.bitnami.com/bitnami
       version: 8.9.*
     description: A Helm chart for Kubernetes
-    digest: 2febd93d0584e530137fdb23e4cac29adec8d03e6ad38d8e6455258b7cbc2366
+    digest: e97468d19410300be724e011cd02a25fc8a3528ffcf32a062406959bd0d234da
     name: alerta
     urls:
     - https://lukasmrtvy.github.io/alerta/alerta-0.2.1.tgz
     version: 0.2.1
-generated: "2021-01-17T02:45:11.01224905Z"
+generated: "2021-01-18T02:43:31.079847623Z"
